@@ -1,12 +1,12 @@
 import './App.css'
-import { MyRoutes } from './router/MyRoutes'
+import { HeaderNav } from './components/layout/HeaderNav'
 
 function App() {
   
 
   return (
     <>
-      <MyRoutes />
+      <HeaderNav />
     </>
   )
 }
