@@ -1,4 +1,5 @@
 import './App.css'
+import { Footer } from './components/layout/Footer'
 import { HeaderNav } from './components/layout/HeaderNav'
 
 function App() {
@@ -6,7 +7,12 @@ function App() {
 
   return (
     <div className='layout'>
+
       <HeaderNav />
+
+
+      <hr/>
+      <Footer />
     </div>
   )
 }

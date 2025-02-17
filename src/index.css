@@ -1,93 +1,69 @@
-/*:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/* GAMA DE COLORES PARA EL PORTAFOLIO */
+:root {
+  /* Fondo principal */
+  --color-fondo: #121212; /* Negro suave, no completamente oscuro */
+  --color-fondo-fin: #2c3e50; /* Azul oscuro para degradado */
+  /* Colores para texto */
+  --color-letras-principales: #FFFFFF; /* Blanco puro para máxima legibilidad */
+  --color-letras-accento: #6F2DA8; /* Violeta profundo para títulos o énfasis */
+  --color-letras-secundarias: #808080; /* Gris medio para texto secundario */
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* Colores neón para acentos */
+  --color-acento-neon-1: #FF6F61; /* Naranja neón */
+  --color-acento-neon-2: #39FF14; /* Verde neón */
+  --color-acento-neon-3: #FFC300; /* Amarillo neón */
+  --color-acento-neon-4: #00E8FF; /* Azul neón */
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* Botones y elementos interactivos */
+  --color-botones-principales: #FF7F50; /* Salmón fuerte para botones */
+  --color-botones-hover: #FF4500; /* Naranja más intenso al pasar el mouse */
+  --color-botones-texto: #FFFFFF; /* Texto blanco en botones */
+
+  /* Bordes y detalles */
+  --color-borde: #4B0082; /* Añade un borde morado oscuro para detalles */
+  --color-borde-neon: #FF00FF; /* Rosa neón para bordes destacados */
+
+  /* Fondo alternativo para secciones */
+  --color-fondo-alternativo: #1E1E1E; /* Negro más claro para alternar fondos */
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
+/* ESTILOS */
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
+  min-height: 100vh; /* Asegura que el body ocupe toda la altura de la pantalla */
+  background: linear-gradient(var(--color-fondo), var(--color-fondo-fin));
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-*/
-
 .layout{
   width: 85%;
   margin: 0 auto;
 }
+
+/* ESTILOS DEL HEADER */
 
 .header{
   height: 130px;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--color-letras-principales);
 }
 
 .header .logo{
   flex: 1 1 auto;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .header a{
   flex: 2 1 auto;
   text-decoration: none;
-  
+  color: var(--color-acento-neon-2);
+}
+
+.header a:hover{
+  color: var(--color-acento-neon-3);
+  transition: all 300ms;
 }
 
 .header ul{
@@ -96,4 +72,29 @@ button:focus-visible {
   justify-content: center;
   align-items: center;
   list-style: none;
+}
+
+.header li{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header .span__v{
+  color: red;
+  margin-left: 1px ;
+}
+
+.header .marca{
+  font-size: 45px;
+}
+
+
+
+/* ESTILOS DEL FOOTER */ 
+
+footer{
+  color: var(--color-acento-neon-3);
 }
