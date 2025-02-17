@@ -5,9 +5,9 @@ function App() {
   
 
   return (
-    <>
+    <div className='layout'>
       <HeaderNav />
-    </>
+    </div>
   )
 }
 

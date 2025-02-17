@@ -67,3 +67,33 @@ button:focus-visible {
   }
 }
 */
+
+.layout{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.header{
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .logo{
+  flex: 1 1 auto;
+}
+
+.header a{
+  flex: 2 1 auto;
+  text-decoration: none;
+  
+}
+
+.header ul{
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}

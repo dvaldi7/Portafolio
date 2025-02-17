@@ -2,7 +2,7 @@ import React from 'react';
 
 export const HeaderNav = () => {
     return (
-        <header>
+        <header className='header'>
             <div className='logo'>
                 <span className='span__d'>D</span>
                 <span className='span__v'>V</span>
