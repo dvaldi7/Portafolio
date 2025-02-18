@@ -3,7 +3,7 @@ import reactLogo from "../../assets/img/react.svg"
 
 export const Footer = () => {
     return (
-        <footer>
+        <footer className='footer'>
             Portafolio Daniel Valdivieso-M. 2025 - Hecho con React
             <span className='react_logo'>
                 <a href='https://react.dev/'>

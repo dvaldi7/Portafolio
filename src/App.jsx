@@ -6,19 +6,25 @@ import { HeaderNav } from './components/layout/HeaderNav'
 import { Portafolio } from './components/Portafolio'
 
 function App() {
-  
+
 
   return (
     <div className='layout'>
 
+      {/* HEADER Y NAV */}
       <HeaderNav />
 
-      <About />
+      {/* BODY/CONTENIDO CENTRAL */}
+      <section className='content'>
+        <About />
 
-      <Contacto />
+        <Contacto />
 
-      <Portafolio />
+        <Portafolio />
 
+      </section>
+      
+      {/* FOOTER */}
       <Footer />
     </div>
   )
