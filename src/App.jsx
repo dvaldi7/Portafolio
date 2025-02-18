@@ -1,6 +1,9 @@
 import './App.css'
+import { About } from './components/About'
+import { Contacto } from './components/Contacto'
 import { Footer } from './components/layout/Footer'
 import { HeaderNav } from './components/layout/HeaderNav'
+import { Portafolio } from './components/Portafolio'
 
 function App() {
   
@@ -10,8 +13,12 @@ function App() {
 
       <HeaderNav />
 
+      <About />
 
-      <hr/>
+      <Contacto />
+
+      <Portafolio />
+
       <Footer />
     </div>
   )

@@ -18,7 +18,7 @@ export const HeaderNav = () => {
                         <a href='/inicio'>Inicio</a>
                     </li>
                     <li>
-                        <a href='/portafolio'>Acerca de</a>
+                        <a href='/portafolio'>Sobre mí</a>
                     </li>
                     <li>
                         <a href='/contacto'>Proyectos</a>

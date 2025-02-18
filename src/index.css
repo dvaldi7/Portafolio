@@ -37,6 +37,7 @@ body {
 .layout{
   width: 85%;
   margin: 0 auto;
+  color: var(--color-letras-principales);
 }
 
 /* ESTILOS DEL HEADER */
@@ -47,22 +48,33 @@ body {
   justify-content: center;
   align-items: center;
   color: var(--color-letras-principales);
+  border-bottom: 2px solid white;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
 }
 
 .header .logo{
+  display: flex;
   flex: 1 1 auto;
-  font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.header .logo h3{
+  display: block;
+  flex-basis: 40px;
+  margin-left: 40px;
+  font-weight: 200;
 }
 
 .header a{
   flex: 2 1 auto;
   text-decoration: none;
-  color: var(--color-acento-neon-2);
+  color: var(--color-acento-neon-3);
 }
 
 .header a:hover{
-  color: var(--color-acento-neon-3);
+  color: var(--color-acento-neon-2);
   transition: all 300ms;
 }
 
@@ -89,6 +101,7 @@ body {
 
 .header .marca{
   font-size: 45px;
+  font-weight: 800;
 }
 
 
@@ -97,4 +110,11 @@ body {
 
 footer{
   color: var(--color-acento-neon-3);
+
+}
+
+footer .react_logo img{
+  width: 35px;      
+  height: auto;
+  margin-left: 15px;
 }
