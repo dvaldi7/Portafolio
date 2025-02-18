@@ -104,6 +104,25 @@ body {
   font-weight: 800;
 }
 
+/* ESTILOS DEL ABOUT ME */
+.about_me{
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_me img{
+  border-radius: 9999px;
+  width: 80px;
+  padding: 10px;
+}
+.about_me .description h1{
+  font-weight: bolder;
+  font-size: 35px;
+  color: var(--color-acento-neon-3);
+  
+}
 
 
 /* ESTILOS DEL FOOTER */ 
