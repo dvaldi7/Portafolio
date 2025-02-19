@@ -35,17 +35,17 @@ export const About = () => {
         </p>
 
         {/* GITHUB */}
-        <a href="https://github.com/dvaldi7" title="Github" target="_blank">
+        <a href="https://github.com/dvaldi7" target="_blank">
           <img src={githubIcon} alt='github icon' />
         </a>
 
         {/* LINKEDIN */}
-        <a href="https://www.linkedin.com/in/danielvaldivieso/" title="Linkedin" target="_blank">
+        <a href="https://www.linkedin.com/in/danielvaldivieso/" target="_blank">
           <img src={linkedinIcon} alt='linkedin icon' />
         </a>
 
         {/* INSTAGRAM */}
-        <a href="https://www.instagram.com/pollo_en_desarrollo" title="Instagram" target="_blank">
+        <a href="https://www.instagram.com/pollo_en_desarrollo" target="_blank">
           <img src={instagramIcon} alt='instagram icon' />
         </a>
 
