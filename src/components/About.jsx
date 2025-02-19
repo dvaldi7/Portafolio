@@ -1,6 +1,8 @@
 import React from 'react'
 import fotoCurriculum from "../assets/img/foto-cv.png"
 import githubIcon from "../assets/icons/github.png"
+import linkedinIcon from "../assets/icons/linkedin.png"
+import instagramIcon from "../assets/icons/instagram.png"
 
 export const About = () => {
   return (
@@ -13,7 +15,7 @@ export const About = () => {
       <div className='description'>
         <h1>Hola, soy Valdi</h1>
 
-        <h3>Y soy <strong>Desarrollador Web</strong></h3>
+        <h3>Y soy <strong>Desarrollador Web</strong>.</h3>
 
         <p>Soy un <strong>apasionado</strong> de la programación y, aunque
           ha descubierto este mundo un poco más tarde, estoy dedicando
@@ -29,12 +31,27 @@ export const About = () => {
           mi <strong>perseverancia</strong>, mi capacidad para aprender de manera
           independiente y de <strong>trabajar en equipo</strong>, y estoy decidido a abrirme paso en este
           sector a través del compromiso, la <strong>pasión</strong> por el desarrollo
-          y el <strong>esfuerzo</strong>
+          y el <strong>esfuerzo</strong>.
         </p>
 
-        <a href="https://github.com/dvaldi7" title="github">
+        {/* GITHUB */}
+        <a href="https://github.com/dvaldi7" title="Github" target="_blank">
           <img src={githubIcon} alt='github icon' />
         </a>
+
+        {/* LINKEDIN */}
+        <a href="https://www.linkedin.com/in/danielvaldivieso/" title="Linkedin" target="_blank">
+          <img src={linkedinIcon} alt='linkedin icon' />
+        </a>
+
+        {/* INSTAGRAM */}
+        <a href="https://www.instagram.com/pollo_en_desarrollo" title="Instagram" target="_blank">
+          <img src={instagramIcon} alt='instagram icon' />
+        </a>
+
+        {/*icons from Flaticon: https://www.flaticon.com/free-icons"*/}
+
+
 
       </div>
 
