@@ -139,6 +139,9 @@ body {
   color: var(--color-acento-neon-2);
 }
 
+.about_me .description img{
+  width: 50px;
+}
 
 
 /* ESTILOS DEL FOOTER */ 
