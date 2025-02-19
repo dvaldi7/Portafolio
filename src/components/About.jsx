@@ -3,6 +3,8 @@ import fotoCurriculum from "../assets/img/foto-cv.png"
 import githubIcon from "../assets/icons/github.png"
 import linkedinIcon from "../assets/icons/linkedin.png"
 import instagramIcon from "../assets/icons/instagram.png"
+import curriculumDV_doc from "../assets/docs/CV-Daniel-Valdivieso-M..pdf"
+import curriculumDV_icon from "../assets/icons/cv.png"
 
 export const About = () => {
   return (
@@ -48,7 +50,12 @@ export const About = () => {
         <a href="https://www.instagram.com/pollo_en_desarrollo" target="_blank">
           <img src={instagramIcon} alt='instagram icon' />
         </a>
-
+          <span className='CV'>
+          {/* DESCARGAR CURRICULUM */}
+          <a href={curriculumDV_doc} target="_blank" rel="noopener noreferrer" download="CurriculumDV.pdf">
+            <img src={curriculumDV_icon} alt='Descargar Curriculum' title='Curriculum Vitae'/>  
+          </a>
+          </span>
         {/*icons from Flaticon: https://www.flaticon.com/free-icons"*/}
 
 
