@@ -17,13 +17,13 @@ function App() {
       {/* BODY/CONTENIDO CENTRAL */}
       <section className='content'>
         <About />
-
+        <hr/>
         <Contacto />
-
+        <hr/>
         <Portafolio />
 
       </section>
-      
+
       {/* FOOTER */}
       <Footer />
     </div>
