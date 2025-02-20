@@ -20,7 +20,7 @@ export const About = () => {
         <h3>Y soy <strong>Desarrollador Web</strong>.</h3>
 
         <p>Soy un <strong>apasionado</strong> de la programación y, aunque
-          ha descubierto este mundo un poco más tarde, estoy dedicando
+          he descubierto este mundo un poco más tarde, estoy dedicando
           todo mi tiempo y <strong>esfuerzo</strong> a alcanzar la meta de ser un profesional del sector
           con <strong>constancia y determinación</strong>. Actualmente, estoy cursando una FP en
           Desarrollo de Aplicaciones Web para obtener el título
