@@ -11,7 +11,7 @@ export const Contacto = () => {
         <input type='text' placeholder='Nombre' />
         <input type='text' placeholder='Apellido' />
         <input type='email' placeholder='Email' />
-        <input type='textarea' placeholder='Motivo del contacto' />
+        <textarea placeholder='Motivo del contacto' />
         <input type='submit' value="Enviar" />
       </form>
       

@@ -152,7 +152,21 @@ body {
   box-shadow: 1px 3px white;
 }
 
+/* CONTACTO */
 
+input[type="text"],
+input[type="email"],
+textarea{
+  display: block;
+  padding: 15px;
+  width: 250px;
+  margin-top: 25px;
+}
+
+input[type="submit"]{
+  background-color: #39FF14;
+  color: #FF4500;
+}
 
 /* ESTILOS DEL FOOTER */ 
 
