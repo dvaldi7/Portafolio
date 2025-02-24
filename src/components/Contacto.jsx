@@ -5,7 +5,7 @@ import React from 'react'
 export const Contacto = () => {
   return (
     <div>
-      <h3>Contacto</h3>
+      <h3 className='contact_name'>Contacto</h3>
 
       <form className='contact' action="mailto:dvaldi7@gmail.com">
         <input type='text' placeholder='Nombre' />
