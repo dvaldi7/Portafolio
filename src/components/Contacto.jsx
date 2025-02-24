@@ -6,7 +6,9 @@ export const Contacto = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     setEnviado(true);
+    setTimeout(() => setEnviado(false), 5000);
   };
 
   // Función para copiar el correo al portapapeles
@@ -32,7 +34,7 @@ export const Contacto = () => {
         <input type='text' placeholder='Apellido' />
         <input type='email' placeholder='Email' />
         <textarea placeholder='Motivo del contacto' />
-        <input type='submit' value={enviado ? "Enviado" : "Enviar"} />
+        <input type='submit' value={enviado ? "¡Enviado!" : "Enviar"} />
       </form>
 
       {/* Copiar correo */}
