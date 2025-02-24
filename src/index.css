@@ -157,6 +157,8 @@ body {
 .contact_name{
   display: grid;
   place-items: center;
+  margin-top: 50px;
+  color: #FFC300;
 }
 
 .contact{
@@ -177,12 +179,12 @@ textarea{
   border-color: white;
   background-color: transparent;
   font-size: 14px;
- 
+ color: white;
 }
 
 input[type="submit"]{
   margin-top: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   width: 100px;
   background-color: #39FF14;
   color: #1E1E1E;

@@ -15,16 +15,16 @@ export const HeaderNav = () => {
             <nav>
                 <ul>
                     <li>
-                        <a href='/inicio'>Inicio</a>
+                        <a href='#'>Inicio</a>
                     </li>
                     <li>
-                        <a href='/portafolio'>Sobre mí</a>
+                        <a href='#sobreMi'>Sobre mí</a>
                     </li>
                     <li>
-                        <a href='/contacto'>Proyectos</a>
+                        <a href='#proyectos'>Proyectos</a>
                     </li>
                     <li>
-                        <a href='/about'>Contacto</a>
+                        <a href='#contacto'>Contacto</a>
                     </li>
                 </ul>
             </nav>
