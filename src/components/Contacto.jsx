@@ -14,7 +14,7 @@ export const Contacto = () => {
     const correo = "dvaldi7@gmail.com";
     navigator.clipboard.writeText(correo) // Copia el texto al portapapeles
       .then(() => {
-        setCopiado(true); 
+        setCopiado(true);
         setTimeout(() => setCopiado(false), 5000);
       })
       .catch((error) => {
@@ -38,13 +38,12 @@ export const Contacto = () => {
       {/* Copiar correo */}
       <div className="correo-alternativo">
         <p>
-         
-          Si lo prefieres, puedes copiar mi correo directamente :{" "}
-
-          <button className='correo-alternativo-btn' onClick={copiarCorreo}>
-            {copiado ? "¡Correo copiado!" : "Copiar correo"}
-          </button>
+          *Si lo prefieres, puedes copiar mi correo directamente :{" "}
         </p>
+
+        <button className='correo-alternativo-btn' onClick={copiarCorreo}>
+          {copiado ? "¡Correo copiado!" : "Copiar correo"}
+        </button>
       </div>
 
     </div>
