@@ -10,11 +10,12 @@ export const Portafolio = () => {
 
       {
         proyectos.map(proyectos => {
+          console.log(`ID: ${proyectos.id}, Ruta: /images/${proyectos.id}.png`);
           return (
           <article key={proyectos.id}>
             <div className='mask'>
-              <img src={"/images/" + proyectos.id + ".png"} 
-                    alt='Proyecto-imagen' />
+              <img src={`/images/${proyectos.id}.png`} 
+                    alt= {`imagen del proyecto ${proyectos.nombre}`} />
             </div>
             <h2>
               <a href={proyectos.url} 
