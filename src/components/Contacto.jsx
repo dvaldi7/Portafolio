@@ -30,10 +30,10 @@ export const Contacto = () => {
 
       {/* Formulario de contacto */}
       <form className='contact' action="mailto:dvaldi7@gmail.com" onSubmit={handleSubmit}>
-        <input type='text' placeholder='Nombre' />
-        <input type='text' placeholder='Apellido' />
-        <input type='email' placeholder='Email' />
-        <textarea placeholder='Motivo del contacto' />
+        <input type='text' placeholder='Nombre' id='input-nombre' />
+        <input type='text' placeholder='Apellido' id='input-apellido' />
+        <input type='email' placeholder='Email' id='input-email'/>
+        <textarea placeholder='Motivo del contacto' id='textarea-motivoContacto'/>
         <input type='submit' value={enviado ? "¡Enviado!" : "Enviar"} />
       </form>
 

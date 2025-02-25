@@ -1,6 +1,6 @@
 import React from 'react'
 import { proyectos } from '../data/proyectos'
-import { Link } from "react-router-dom"
+
 
 export const Portafolio = () => {
   return (
@@ -12,6 +12,10 @@ export const Portafolio = () => {
         proyectos.map(proyectos => {
           return (
           <article key={proyectos.id}>
+            <div className='mask'>
+              <img src={"/images/" + proyectos.id + ".png"} 
+                    alt='Proyecto-imagen' />
+            </div>
             <h2>
               <a href={proyectos.url} 
                   target="_blank" 
