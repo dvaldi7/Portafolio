@@ -12,15 +12,15 @@ export const Contacto = () => {
   };
 
   // Función para copiar el correo al portapapeles
-  const copiarCorreo = () => {
-    const correo = "dvaldi7@gmail.com";
-    navigator.clipboard.writeText(correo) // Copia el texto al portapapeles
+  const copyEmail = () => {
+    const email = "dvaldi7@gmail.com";
+    navigator.clipboard.writeText(email) // Copia el texto al portapapeles
       .then(() => {
         setCopiado(true);
         setTimeout(() => setCopiado(false), 5000);
       })
       .catch((error) => {
-        console.error("Error al copiar el correo: ", error);
+        console.error("Error al copiar el email: ", error);
       });
   };
 
@@ -40,11 +40,11 @@ export const Contacto = () => {
       {/* Copiar correo */}
       <div className="correo-alternativo">
         <p>
-          *Si lo prefieres, puedes copiar mi correo directamente :{" "}
+          *Si lo prefieres, puedes copiar mi email directamente:
         </p>
 
-        <button className='correo-alternativo-btn' onClick={copiarCorreo}>
-          {copiado ? "¡Correo copiado!" : "Copiar correo"}
+        <button className='correo-alternativo-btn' onClick={copyEmail}>
+          {copiado ? "¡Email copiado!" : "Copiar email"}
         </button>
       </div>
 
