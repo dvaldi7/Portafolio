@@ -12,7 +12,13 @@ export const Portafolio = () => {
         proyectos.map(proyectos => {
           return (
           <article key={proyectos.id}>
-            <h2><Link to={proyectos.url}>{proyectos.nombre}</Link></h2>
+            <h2>
+              <a href={proyectos.url} 
+                  target="_blank" 
+                  rel="noopener noreferrer">
+                    {proyectos.nombre}
+              </a>
+            </h2>
             <h3>{proyectos.tecnologias}</h3>
             <h3>{proyectos.descripcion}</h3>
           </article>
