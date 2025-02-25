@@ -152,6 +152,16 @@ body {
   box-shadow: 1px 3px white;
 }
 
+/* PROYECTOS */
+
+.portafolio-title{
+  display: grid;
+  place-items: center;
+  margin-top: 50px;
+  color: #FFC300;
+}
+
+
 /* CONTACTO */
 
 .contact_name{

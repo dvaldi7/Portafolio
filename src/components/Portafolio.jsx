@@ -1,18 +1,22 @@
 import React from 'react'
 import { proyectos } from '../data/proyectos'
+import { Link } from "react-router-dom"
 
 export const Portafolio = () => {
   return (
-    <div>
+    <div className="portafolio" id='portafolio'>
 
-      <h3>Portafolio</h3>
+      <h3 className='portafolio-title'>Proyectos</h3>
 
       {
         proyectos.map(proyectos => {
-          {console.log(proyectos)}
-          <article>
-            <h2>{proyectos.nombre}</h2>
+          return (
+          <article key={proyectos.id}>
+            <h2><Link to={proyectos.url}>{proyectos.nombre}</Link></h2>
+            <h3>{proyectos.tecnologias}</h3>
+            <h3>{proyectos.descripcion}</h3>
           </article>
+          );
         })
       }
 

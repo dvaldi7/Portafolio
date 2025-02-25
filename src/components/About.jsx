@@ -8,7 +8,7 @@ import curriculumDV_icon from "../assets/icons/cv.png"
 
 export const About = () => {
   return (
-    <section className='about_me'>
+    <section className='about_me' id='sobreMi'>
 
       <div className='photo'>
         <img src={fotoCurriculum} alt='Foto-CV' />

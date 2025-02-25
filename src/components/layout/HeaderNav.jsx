@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const HeaderNav = () => {
     return (
-        <header className='header'>
+        <header className='header' id='inicio'>
             <div className='logo'>
                 <div className='marca'>
                     <span className='span__d'>D</span>
@@ -14,17 +15,17 @@ export const HeaderNav = () => {
 
             <nav>
                 <ul>
-                    <li>
-                        <a href='#'>Inicio</a>
+                <li>
+                        <Link to="/#inicio">Inicio</Link> 
                     </li>
                     <li>
-                        <a href='#sobreMi'>Sobre mí</a>
+                        <Link to="/#sobreMi">Sobre mí</Link> 
                     </li>
                     <li>
-                        <a href='#proyectos'>Proyectos</a>
+                        <Link to="/#portafolio">Proyectos</Link> 
                     </li>
                     <li>
-                        <a href='#contacto'>Contacto</a>
+                        <Link to="/#contacto">Contacto</Link>
                     </li>
                 </ul>
             </nav>
