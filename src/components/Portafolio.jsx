@@ -8,28 +8,31 @@ export const Portafolio = () => {
 
       <h3 className='portafolio-title'>Proyectos</h3>
 
-      {
-        proyectos.map(proyectos => {
-          console.log(`ID: ${proyectos.id}, Ruta: /images/${proyectos.id}.png`);
-          return (
-          <article key={proyectos.id}>
-            <div className='mask'>
-              <img src={`/images/${proyectos.id}.png`} 
-                    alt= {`imagen del proyecto ${proyectos.nombre}`} />
-            </div>
-            <h2>
-              <a href={proyectos.url} 
-                  target="_blank" 
-                  rel="noopener noreferrer">
-                    {proyectos.nombre}
-              </a>
-            </h2>
-            <h3>{proyectos.tecnologias}</h3>
-            <h3>{proyectos.descripcion}</h3>
-          </article>
-          );
-        })
-      }
+      <section className='works'>
+        {
+          proyectos.map(proyectos => {
+            return (
+              <article key={proyectos.id} className='project-item'>
+                <div className='mask'>
+                  <img src={`/images/${proyectos.id}.png`}
+                    alt={`imagen del proyecto ${proyectos.nombre}`} />
+                </div>
+                <div className='project-info'>
+                  <h2 className='project-url'>
+                    <a href={proyectos.url}
+                      target="_blank"
+                      rel="noopener noreferrer">
+                      {proyectos.nombre}
+                    </a>
+                  </h2>
+                  <h3 className='project-tec'>{proyectos.tecnologias}</h3>
+                  <h3 className='project-desc'>{proyectos.descripcion}</h3>
+                </div>
+              </article>
+            );
+          })
+        }
+      </section>
 
     </div>
   )

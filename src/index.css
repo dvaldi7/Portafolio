@@ -62,7 +62,7 @@ body {
 }
 
 .header .logo h3{
-  display: block;
+  display: flex;
   flex-basis: 40px;
   margin-left: 40px;
   font-weight: 200;
@@ -160,6 +160,52 @@ body {
   margin-top: 50px;
   color: #FFC300;
 }
+
+.works{
+  display: flex;
+  flex-wrap: wrap;
+  padding:20px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.project-info {
+  width: 50%;
+  padding: 10px;
+  margin-left: 20px;
+  height: 300px;
+}
+
+.project-info a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #39FF14;
+  text-decoration: none;
+}
+
+
+.project-item{
+  display: flex;
+  width: 100%;
+  flex-grow: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 20px;
+
+}
+
+.project-item img{
+  width: 100%;
+  margin-right: 20px;
+  height: 300px;
+  object-fit: cover;
+}
+
 
 
 /* CONTACTO */
