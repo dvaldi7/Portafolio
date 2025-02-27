@@ -1,6 +1,9 @@
 import React from 'react'
 import { proyectos } from '../data/proyectos'
 
+import { iconosTecnologias } from "../data/tecnologias"
+
+
 
 export const Portafolio = () => {
   return (
@@ -17,6 +20,7 @@ export const Portafolio = () => {
                   <img src={`/images/${proyectos.id}.png`}
                     alt={`imagen del proyecto ${proyectos.nombre}`} />
                 </div>
+
                 <div className='project-info'>
                   <h2 className='project-url'>
                     <a href={proyectos.url}
@@ -25,8 +29,18 @@ export const Portafolio = () => {
                       {proyectos.nombre}
                     </a>
                   </h2>
-                  <h3 className='project-tec'>{proyectos.tecnologias}</h3>
+
                   <h3 className='project-desc'>{proyectos.descripcion}</h3>
+                  
+                  <h3 className="project-tech">
+                    {proyectos.tecnologias.split(", ").map((tecnologia, index) => (
+                        <img
+                          src={iconosTecnologias[tecnologia]} key={index}
+                          className="tech-icon" alt={tecnologia}
+                        />
+                    ))}
+                  </h3>
+
                 </div>
               </article>
             );

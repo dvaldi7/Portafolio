@@ -2,7 +2,7 @@
 export const proyectos = [
     {
         "id": "GracieBarra",
-        "nombre": "Gracie Barra Landin Page",
+        "nombre": "Gracie Barra Landing Page",
         "url": "https://dvaldi7.github.io/Proyecto-GBA/",
         "tecnologias": "HTML, CSS, JS", 
         "descripcion": "Landing page realizada para el gimnasio de Brazilian Jiujitsu "+
@@ -18,7 +18,7 @@ export const proyectos = [
     },
     {
         "id": "excursion",
-        "nombre": "Excursion Web",
+        "nombre": "Excursión Web",
         "url": "https://dvaldi7.github.io/excursion/",
         "tecnologias": "HTML, CSS", 
         "descripcion": "Lading Page para una web de excursiones por la naturaleza"+
