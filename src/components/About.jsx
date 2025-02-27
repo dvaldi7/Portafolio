@@ -15,10 +15,11 @@ export const About = () => {
       setText((prevText) =>
         prevText === "Hola, soy Valdi" ? "Hola, soy Davaldev" : "Hola, soy Valdi"
       );
-    }, 8000); 
+    }, 4000); 
 
     return () => clearInterval(interval);
   }, []);
+
 
   return (
     <section className='about_me' id='sobreMi'>

@@ -136,6 +136,11 @@ body {
   padding: 3px;
 }
 
+.about_me .photo:hover{
+  cursor: pointer;
+  transform: rotate(10deg) scale(1.2);
+}
+
 .about_me .description{
   width: 100%;
   display: flex;
@@ -145,17 +150,20 @@ body {
 
 .about_me .description h1{
   width: 100%;
+  height: 40px;
   font-weight: bolder;
   font-size: 35px;
   color: var(--color-acento-neon-3);
   text-wrap: nowrap;
+  white-space: nowrap;
   overflow: hidden;
   animation: typing 4s steps(20) infinite alternate-reverse;
+  visibility: visible;
 }
 
 @keyframes typing{
   from{
-    width: 0ch;
+    width: .1ch;
   }
   to{
     width: 100%;
