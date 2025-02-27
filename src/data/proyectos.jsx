@@ -4,7 +4,7 @@ export const proyectos = [
         "id": "GracieBarra",
         "nombre": "Gracie Barra Landing Page",
         "url": "https://dvaldi7.github.io/Proyecto-GBA/",
-        "tecnologias": "HTML, CSS, JS", 
+        "tecnologias": "HTML, CSS, JavaScript", 
         "descripcion": "Landing page realizada para el gimnasio de Brazilian Jiujitsu "+
         "Gracie Barra, en Alicante.",
     },
@@ -12,7 +12,7 @@ export const proyectos = [
         "id": "pokedex",
         "nombre": "Pokédex",
         "url": "https://dvaldi7.github.io/Pokedex/",
-        "tecnologias": "HTML, CSS, JS", 
+        "tecnologias": "HTML, CSS, JavaScript", 
         "descripcion": "Proyecto realizado para trabajar en el uso De APIS "+
         ". Es el típico proyecto, pero mi niño interior tenía que hacerlo.",
     },

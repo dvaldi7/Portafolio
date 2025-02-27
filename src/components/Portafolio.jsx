@@ -37,6 +37,7 @@ export const Portafolio = () => {
                         <img
                           src={iconosTecnologias[tecnologia]} key={index}
                           className="tech-icon" alt={tecnologia}
+                          title={tecnologia}
                         />
                     ))}
                   </h3>

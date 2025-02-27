@@ -6,7 +6,7 @@ import reactIcon from "../assets/icons/reactIcon.png"
 export const iconosTecnologias = {
     "HTML": htmlIcon,
     "CSS": cssIcon,
-    "JS": jsIcon,
+    "JavaScript": jsIcon,
     "React": reactIcon,
     
 };
