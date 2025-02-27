@@ -1,6 +1,5 @@
 import React from 'react'
 import { proyectos } from '../data/proyectos'
-
 import { iconosTecnologias } from "../data/tecnologias"
 
 

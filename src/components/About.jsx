@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import fotoCurriculum from "../assets/img/foto-cv.png"
 import githubIcon from "../assets/icons/github.png"
 import linkedinIcon from "../assets/icons/linkedin.png"
@@ -7,6 +7,19 @@ import curriculumDV_doc from "../assets/docs/CV-Daniel-Valdivieso-M..pdf"
 import curriculumDV_icon from "../assets/icons/cv.png"
 
 export const About = () => {
+
+  const [text, setText] = useState("Hola, soy Valdi");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setText((prevText) =>
+        prevText === "Hola, soy Valdi" ? "Hola, soy Davaldev" : "Hola, soy Valdi"
+      );
+    }, 8000); 
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className='about_me' id='sobreMi'>
 
@@ -15,7 +28,7 @@ export const About = () => {
       </div>
 
       <div className='description'>
-        <h1>Hola, soy Valdi</h1>
+        <h1 id='typing-text'>{text}...</h1>
 
         <h3>Y soy <strong>Desarrollador Web</strong>.</h3>
 
