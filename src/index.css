@@ -78,6 +78,7 @@ body {
 .header a:hover{
   color: var(--color-acento-neon-2);
   transition: all 300ms;
+  font-size: 18px;
 }
 
 .header ul{
