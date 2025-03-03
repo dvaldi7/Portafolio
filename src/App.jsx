@@ -1,4 +1,5 @@
 import './App.css'
+import "./responsive.css"
 import { About } from './components/About'
 import { Contacto } from './components/Contacto'
 import { Footer } from './components/layout/Footer'

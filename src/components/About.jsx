@@ -10,7 +10,7 @@ export const About = () => {
 
   const [text, setText] = useState("Hola, soy Valdi");
 
-  useEffect(() => {
+  /*useEffect(() => {
     const interval = setInterval(() => {
       setText((prevText) =>
         prevText === "Hola, soy Valdi" ? "Hola, soy Davaldev" : "Hola, soy Valdi"
@@ -18,7 +18,7 @@ export const About = () => {
     }, 4000); 
 
     return () => clearInterval(interval);
-  }, []);
+  }, []);*/
 
 
   return (
@@ -49,32 +49,34 @@ export const About = () => {
           sector a través del compromiso, la <strong>pasión</strong> por el desarrollo
           y el <strong>esfuerzo</strong>.
         </p>
-
-        {/* GITHUB */}
-        <a href="https://github.com/dvaldi7" target="_blank">
-          <img src={githubIcon} alt='github icon' />
-        </a>
-
-        {/* LINKEDIN */}
-        <a href="https://www.linkedin.com/in/danielvaldivieso/" target="_blank">
-          <img src={linkedinIcon} alt='linkedin icon' />
-        </a>
-
-        {/* INSTAGRAM */}
-        <a href="https://www.instagram.com/pollo_en_desarrollo" target="_blank">
-          <img src={instagramIcon} alt='instagram icon' />
-        </a>
-          <span className='CV'>
-          {/* DESCARGAR CURRICULUM */}
-          <a href={curriculumDV_doc} target="_blank" rel="noopener noreferrer" download="CurriculumDV.pdf">
-            <img src={curriculumDV_icon} alt='Descargar Curriculum' title='Curriculum Vitae'/>  
+        <div className='icons'>
+          {/* GITHUB */}
+          <a href="https://github.com/dvaldi7" target="_blank">
+            <img src={githubIcon} alt='github icon' />
           </a>
+
+          {/* LINKEDIN */}
+          <a href="https://www.linkedin.com/in/danielvaldivieso/" target="_blank">
+            <img src={linkedinIcon} alt='linkedin icon' />
+          </a>
+
+          {/* INSTAGRAM */}
+          <a href="https://www.instagram.com/pollo_en_desarrollo" target="_blank">
+            <img src={instagramIcon} alt='instagram icon' />
+          </a>
+          <span className='CV'>
+            {/* DESCARGAR CURRICULUM */}
+            <a href={curriculumDV_doc} target="_blank" rel="noopener noreferrer" download="CurriculumDV.pdf">
+              <img src={curriculumDV_icon} alt='Descargar Curriculum' title='Curriculum Vitae' />
+            </a>
           </span>
-        {/*icons from Flaticon: https://www.flaticon.com/free-icons"*/}
+          {/*icons from Flaticon: https://www.flaticon.com/free-icons"*/}
 
 
 
+        </div>
       </div>
+
 
     </section>
   )
