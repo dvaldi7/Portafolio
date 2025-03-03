@@ -53,44 +53,101 @@ div.logo{
 }
 
 /* ESTILOS DEL ABOUT ME */
-    .about_me {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+.about_me {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
-    #typing-text{
-        font-size: 25px;
-    }
+#typing-text{
+    font-size: 25px;
+}
 
-    .photo img {
-        width: 150px;
-        height: 150px;
-    }
+.photo img {
+    width: 150px;
+    height: 150px;
+}
 
-    .description{
-        justify-content: center;
-    }
+.description{
+    justify-content: center;
+}
 
-    .description h1 {
-        font-size: 24px;
-    }
+.description h1 {
+    font-size: 24px;
+}
 
-    .description h3 {
-        font-size: 18px;
-    }
+.description h3 {
+    font-size: 18px;
+}
 
-    .description p {
-        font-size: 14px;
-    }
+.description p {
+    font-size: 14px;
+}
 
-    .description a img {
-        width: 30px;
-        height: 30px;
-        margin: 5px;
-    }
+.description a img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+
+/* ESTILOS DEL PORTAFOLIO */
+
+.portafolio {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .portafolio-title {
+    font-size: 1.5rem;
+  }
+
+  .works {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .project-item {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  }
+
+  .mask{
+    width: 80%;
+
+  }
+.project-info{
+    width: 100%;  
+}
+  .project-url a {
+    font-size: 14px;
+  }
+
+  .project-url a:hover {
+    font-size: 1rem;
+  }
+
+  .project-desc {
+    font-size: 0.9rem;
+  }
+
+  .tech-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
 
 }
+
+
 
 /* Estilos para pantallas medianas (tablets) */
 @media (min-width: 769px) and (max-width: 1024px) {
