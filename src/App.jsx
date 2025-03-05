@@ -26,7 +26,7 @@ function App() {
 
       {/* HEADER Y NAV */}
       <HeaderNav />
-
+      
       {/* BODY/CONTENIDO CENTRAL */}
       <section className='content'>
         <About />

@@ -50,7 +50,6 @@ body {
   justify-content: center;
   align-items: center;
   color: var(--color-letras-principales);
-  border-bottom: 2px solid white;
   margin-bottom: 35px;
   letter-spacing: 1px;
 }
