@@ -59,6 +59,17 @@ div.logo{
     text-align: center;
 }
 
+.about_me .icons{
+    display: flex;
+    flex-wrap: wrap;
+   gap: 0px;
+}
+
+.about_me .icons a img{
+    width: 30px;
+    height: auto;
+}
+
 #typing-text{
     font-size: 25px;
 }
@@ -118,6 +129,7 @@ div.logo{
     align-items: center;
     margin: 0;
   }
+
   .project-info{
     margin: 0;
   }
@@ -127,7 +139,8 @@ div.logo{
 
   }
 .project-info{
-    width: 100%;  
+    width: 100%; 
+    margin-bottom: 10px; 
 }
 
 .project-url{
