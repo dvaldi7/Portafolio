@@ -303,9 +303,10 @@ body {
 }
 
 .contact_name{
-  display: grid;
-  place-items: center;
-  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   color: var(--color-acento-neon-3);
   font-size: 40px;
 }
