@@ -26,13 +26,13 @@ function App() {
 
       {/* HEADER Y NAV */}
       <HeaderNav />
-      
+
       {/* BODY/CONTENIDO CENTRAL */}
       <section className='content'>
         <About />
-        <hr />
+        
         <Portafolio />
-        <hr />
+     
         <Contacto />
       </section>
 
