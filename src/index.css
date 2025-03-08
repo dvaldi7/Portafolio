@@ -209,7 +209,7 @@ body {
   display: grid;
   place-items: center;
   margin-top: 50px;
-  color: #FFC300;
+  color: var(--color-acento-neon-3);
 }
 
 .works{
@@ -234,13 +234,13 @@ body {
 }
 
 .project-info a{
-  color: #FFC300;
+  color: var(--color-acento-neon-3);
   text-decoration: none;
   transition: all 300ms;
 }
 
 .project-info a:hover{
-  color: #39FF14;
+  color: var(--color-acento-neon-2);
   font-size: 25px;
 }
 
@@ -306,7 +306,7 @@ body {
   display: grid;
   place-items: center;
   margin-top: 50px;
-  color: #FFC300;
+  color: var(--color-acento-neon-3);
   font-size: 40px;
 }
 
@@ -334,7 +334,7 @@ input[type="submit"]{
   margin-top: 50px;
   margin-bottom: 30px;
   width: 100px;
-  background-color: #39FF14;
+  background-color: var(--color-acento-neon-2);
   color: #1E1E1E;
   border: 0px;
   border-radius: 5%;
@@ -359,7 +359,7 @@ input[type="submit"]:hover{
 
 .correo-alternativo-btn{
   width: 120px;
-  background-color: #FFC300;
+  background-color: var(--color-acento-neon-3);
   color: #1E1E1E;
   border: 0px;
   border-radius: 5%;
