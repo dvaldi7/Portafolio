@@ -16,8 +16,13 @@ export const Portafolio = () => {
             return (
               <article key={proyectos.id} className='project-item'>
                 <div className='mask'>
+                <a href={proyectos.url}
+                      target="_blank"
+                      rel="noopener noreferrer">
+                    
                   <img src={`/images/${proyectos.id}.png`}
                     alt={`imagen del proyecto ${proyectos.nombre}`} />
+                </a>
                 </div>
 
                 <div className='project-info'>
