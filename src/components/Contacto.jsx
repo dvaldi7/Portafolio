@@ -8,7 +8,7 @@ export const Contacto = () => {
     e.preventDefault();
 
     setEnviado(true);
-    setTimeout(() => setEnviado(false), 5000);
+    setTimeout(() => setEnviado(false), 3000);
   };
 
   // Función para copiar el correo al portapapeles
@@ -17,7 +17,7 @@ export const Contacto = () => {
     navigator.clipboard.writeText(email) // Copia el texto al portapapeles
       .then(() => {
         setCopiado(true);
-        setTimeout(() => setCopiado(false), 5000);
+        setTimeout(() => setCopiado(false), 3000);
       })
       .catch((error) => {
         console.error("Error al copiar el email: ", error);
