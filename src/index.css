@@ -307,6 +307,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
+  
   color: var(--color-acento-neon-3);
   font-size: 40px;
 }

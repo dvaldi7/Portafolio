@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import fotoCurriculum from "../assets/img/foto-cv.png"
+import fotoCurriculum from "../assets/img/valdi-cyber-gris.png"
+/*import fotoCurriculum from "../assets/img/foto-cv.png"*/
 import githubIcon from "../assets/icons/github.png"
 import linkedinIcon from "../assets/icons/linkedin.png"
 import instagramIcon from "../assets/icons/instagram.png"
