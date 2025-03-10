@@ -20,7 +20,7 @@ export const Portafolio = () => {
                       target="_blank"
                       rel="noopener noreferrer">
                     
-                  <img src={`/images/${proyectos.id}.png`}
+                  <img src={`./images/${proyectos.id}.png`}
                     alt={`imagen del proyecto ${proyectos.nombre}`} />
                 </a>
                 </div>
