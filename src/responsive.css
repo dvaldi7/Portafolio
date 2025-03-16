@@ -222,7 +222,7 @@ div.logo{
 
 
 /* Estilos para pantallas medianas (tablets) */
-@media (min-width: 769px) and (max-width: 1034px) {
+@media (min-width: 769px) and (max-width: 1035px) {
 
     /* ESTILOS DEL HEADER Y NAV */
 
@@ -393,7 +393,7 @@ div.logo{
 }
 
 /* Estilos para pantallas grandes (escritorios) */
-@media (min-width: 1025px) {
+@media (min-width: 1035px) {
 
 /* ESTILOS DEL ABOUT ME */
     .about_me {
