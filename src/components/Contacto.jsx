@@ -5,8 +5,6 @@ export const Contacto = () => {
   const [copiado, setCopiado] = useState(false);
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-
     setEnviado(true);
     setTimeout(() => setEnviado(false), 3000);
   };
@@ -14,7 +12,7 @@ export const Contacto = () => {
   // Función para copiar el correo al portapapeles
   const copyEmail = () => {
     const email = "dvaldi7@gmail.com";
-    navigator.clipboard.writeText(email) // Copia el texto al portapapeles
+    navigator.clipboard.writeText(email)
       .then(() => {
         setCopiado(true);
         setTimeout(() => setCopiado(false), 3000);
@@ -26,14 +24,44 @@ export const Contacto = () => {
 
   return (
     <div id='contacto'>
-      <h3 className='contact_name' >Contacto</h3>
+      <h3 className='contact_name'>Contacto</h3>
 
       {/* Formulario de contacto */}
-      <form className='contact' action="mailto:dvaldi7@gmail.com" onSubmit={handleSubmit}>
-        <input type='text' placeholder='Nombre' id='input-nombre' />
-        <input type='text' placeholder='Apellido' id='input-apellido' />
-        <input type='email' placeholder='Email' id='input-email'/>
-        <textarea placeholder='Motivo del contacto' id='textarea-motivoContacto'/>
+      <form
+        className='contact'
+        action="https://formspree.io/f/xnnzyqqv"
+        method="POST"
+        onSubmit={handleSubmit}
+      >
+        <input 
+          type='text' 
+          name="nombre"
+          placeholder='Nombre'
+          id='input-nombre'
+          autoComplete="name"
+          required
+        />
+        <input
+          type='text'
+          name="apellido"
+          placeholder='Apellido'
+          id='input-apellido'
+          autoComplete="family-name"
+        />
+        <input
+          type='email'
+          name="email"
+          placeholder='Email'
+          id='input-email'
+          autoComplete="email"
+          required
+        />
+        <textarea
+          name="mensaje"
+          placeholder='Motivo del contacto'
+          id='textarea-motivoContacto'
+          required
+        />
         <input type='submit' value={enviado ? "¡Enviado!" : "Enviar"} />
       </form>
 
