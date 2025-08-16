@@ -4,7 +4,7 @@ import fotoCurriculum from "../assets/img/valdi-cyber-gris.png"
 import githubIcon from "../assets/icons/github.png"
 import linkedinIcon from "../assets/icons/linkedin.png"
 import instagramIcon from "../assets/icons/instagram.png"
-import curriculumDV_doc from "../assets/docs/CV-Daniel-Valdivieso-M..pdf"
+import curriculumDV_doc from "../assets/docs/CV-Daniel-Valdivieso-M.pdf"
 import curriculumDV_icon from "../assets/icons/cv.png"
 
 export const About = () => {
