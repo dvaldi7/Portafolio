@@ -237,6 +237,7 @@ body {
 }
 
 .project-info a{
+  display: inline-block;
   color: var(--color-acento-neon-3);
   text-decoration: none;
   transition: all 300ms;
@@ -244,7 +245,7 @@ body {
 
 .project-info a:hover{
   color: var(--color-acento-neon-2);
-  font-size: 25px;
+  transform: scale(1.1);
 }
 
 .project-desc{

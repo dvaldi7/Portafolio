@@ -1,39 +1,39 @@
 /* Estilos para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
 
-/* ESTILOS DEL HEADER Y NAV */
+  /* ESTILOS DEL HEADER Y NAV */
 
-.header{
+  .header {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 10px;
 
-}
+  }
 
-div.logo{
+  div.logo {
     width: 100%;
     align-items: center;
     justify-content: center;
-    
-}
 
-.header .marca{
+  }
+
+  .header .marca {
     font-size: 50px;
-}
+  }
 
-.header .logo h3 {
+  .header .logo h3 {
     justify-content: flex-end;
 
-}
+  }
 
-.header nav{
+  .header nav {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-}
+  }
 
-.header ul{
+  .header ul {
     display: flex;
     flex-shrink: initial;
     list-style: none;
@@ -41,12 +41,13 @@ div.logo{
     padding: 0;
     height: 40px;
     flex-wrap: nowrap;
-}
-.header li:hover{
-  transform: scale(1.1);
-}
+  }
 
-.header a {
+  .header li:hover {
+    transform: scale(1.1);
+  }
+
+  .header a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,62 +56,62 @@ div.logo{
     height: 35px;
     font-size: 10px;
     padding: 2px;
-}
+  }
 
 
-/* ESTILOS DEL ABOUT ME */
-.about_me {
+  /* ESTILOS DEL ABOUT ME */
+  .about_me {
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
+  }
 
-.about_me .icons{
+  .about_me .icons {
     display: flex;
     flex-wrap: wrap;
     gap: 0px;
-}
+  }
 
-.about_me .icons a img{
+  .about_me .icons a img {
     width: 30px;
     height: auto;
-}
+  }
 
-#typing-text{
+  #typing-text {
     font-size: 25px;
-}
+  }
 
-.photo img {
+  .photo img {
     width: 150px;
     height: 150px;
-}
+  }
 
-.description{
+  .description {
     justify-content: center;
-}
+  }
 
-.description h1 {
+  .description h1 {
     font-size: 24px;
-}
+  }
 
-.description h3 {
+  .description h3 {
     font-size: 18px;
-}
+  }
 
-.description p {
+  .description p {
     font-size: 14px;
-}
+  }
 
-.description a img {
+  .description a img {
     width: 30px;
     height: 30px;
     margin: 5px;
-}
+  }
 
 
-/* ESTILOS DEL PORTAFOLIO */
+  /* ESTILOS DEL PORTAFOLIO */
 
-.portafolio {
+  .portafolio {
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -135,27 +136,29 @@ div.logo{
     align-items: center;
   }
 
-  .mask{
+  .mask {
     width: 80%;
 
   }
+
   .project-info {
     width: 80%;
     flex-wrap: wrap;
     margin-bottom: 10px;
     margin-left: -20px;
-}
-
-.project-url{
-    text-align: center;
-    
-}
-  .project-url a {
-    font-size: 16px;
   }
 
-  .project-url a:hover {
-    font-size: 14px;
+  .project-info a:hover {
+    transform: scale(1.1);
+  }
+
+  .project-url {
+    text-align: center;
+
+  }
+
+  .project-url a {
+    font-size: 16px;
   }
 
   .project-desc {
@@ -164,7 +167,7 @@ div.logo{
     margin-bottom: 10px;
   }
 
-  .project-tech{
+  .project-tech {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -173,7 +176,7 @@ div.logo{
     margin-top: 20px;
   }
 
-  .project-tech img{
+  .project-tech img {
     width: 30px;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -184,8 +187,8 @@ div.logo{
     height: 25px;
   }
 
-  /* ESTILOS DE CONTACTO */ 
-  #contacto{
+  /* ESTILOS DE CONTACTO */
+  #contacto {
     margin-top: -75px;
     width: 100%;
     display: flex;
@@ -194,7 +197,7 @@ div.logo{
     justify-content: center;
   }
 
-  .contact_name{
+  .contact_name {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -203,7 +206,7 @@ div.logo{
 
   /* ESTILOS DEL FOOTER */
 
-  .footer{
+  .footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -212,11 +215,11 @@ div.logo{
     font-size: 10px;
   }
 
-    .foter .react_logo img{
-        width: 35px;
-        height: auto;
-        margin-left: 15px;
-        margin-top: 10px;
+  .foter .react_logo img {
+    width: 35px;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 10px;
   }
 }
 
@@ -224,39 +227,39 @@ div.logo{
 /* Estilos para pantallas medianas (tablets) */
 @media (min-width: 769px) and (max-width: 1035px) {
 
-    /* ESTILOS DEL HEADER Y NAV */
+  /* ESTILOS DEL HEADER Y NAV */
 
-.header{
+  .header {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 10px;
 
-}
+  }
 
-div.logo{
+  div.logo {
     width: 100%;
     align-items: center;
     justify-content: center;
-    
-}
 
-.header .marca{
+  }
+
+  .header .marca {
     font-size: 50px;
-}
+  }
 
-.header .logo h3 {
+  .header .logo h3 {
     justify-content: flex-end;
 
-}
+  }
 
-.header nav{
+  .header nav {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-}
+  }
 
-.header ul{
+  .header ul {
     display: flex;
     flex-shrink: initial;
     list-style: none;
@@ -264,9 +267,9 @@ div.logo{
     padding: 0;
     height: 40px;
     flex-wrap: nowrap;
-}
+  }
 
-.header a {
+  .header a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -275,107 +278,109 @@ div.logo{
     height: 35px;
     font-size: 18px;
     padding: 2px;
-}
+  }
 
-.header li:hover{
-  transform: scale(1.1);
-}
+  .header li:hover {
+    transform: scale(1.1);
+  }
 
-/* ESTILOS DEL ABOUT ME */
-    .about_me {
-        flex-direction: row;
-        justify-content: space-around;
-    }
+  /* ESTILOS DEL ABOUT ME */
+  .about_me {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
-    .photo img {
-        width: 200px;
-        height: 200px;
-    }
+  .photo img {
+    width: 200px;
+    height: 200px;
+  }
 
-    .description h1 {
-        font-size: 28px;
-    }
+  .description h1 {
+    font-size: 28px;
+  }
 
-    .description h3 {
-        font-size: 20px;
-    }
+  .description h3 {
+    font-size: 20px;
+  }
 
-    .description p {
-        font-size: 16px;
-    }
+  .description p {
+    font-size: 16px;
+  }
 
-    .description a img {
-        width: 40px;
-        height: 40px;
-        margin: 10px;
-    }
+  .description a img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
 
-    /* ESTILOS DE PROYECTOS */
+  /* ESTILOS DE PROYECTOS */
 
-    .works {
-        flex-direction: column;
-        align-items: center;
-        margin-left: -15px;
-      }
-    
-      .project-item {
-        max-width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+  .works {
+    flex-direction: column;
+    align-items: center;
+    margin-left: -15px;
+  }
 
-      .mask{
-        width: 80%;
-    
-      }
-      .project-info {
-        width: 80%;
-        flex-wrap: wrap;
-        margin-bottom: 10px;
-        margin-left: -20px;
-    }
-    
-    .project-url{
-        text-align: center;
-        
-    }
-      .project-url a {
-        font-size: 18px;
-      }
-    
-      .project-url a:hover {
-        font-size: 20px;
-      }
-    
-      .project-desc {
-        width: 100%;
-        font-size: 0.9rem;
-        margin-bottom: 10px;
-      }
-    
-      .project-tech{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-        margin-top: 20px;
-      }
-    
-      .project-tech img{
-        width: 45px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-      }
-    
-      .tech-icon {
-        width: 25px;
-        height: 25px;
-      }
+  .project-item {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-       /* ESTILOS DE CONTACTO */ 
-  #contacto{
+  .mask {
+    width: 80%;
+
+  }
+
+  .project-info {
+    width: 80%;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-left: -20px;
+  }
+
+  .project-info a:hover {
+    transform: scale(1.1);
+  }
+
+  .project-url {
+    text-align: center;
+
+  }
+
+  .project-url a {
+    font-size: 18px;
+  }
+
+  .project-desc {
+    width: 100%;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  .project-tech {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .project-tech img {
+    width: 45px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .tech-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  /* ESTILOS DE CONTACTO */
+  #contacto {
     margin-top: -75px;
     width: 100%;
     display: flex;
@@ -384,7 +389,7 @@ div.logo{
     justify-content: center;
   }
 
-  .contact_name{
+  .contact_name {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -395,32 +400,32 @@ div.logo{
 /* Estilos para pantallas grandes (escritorios) */
 @media (min-width: 1035px) {
 
-/* ESTILOS DEL ABOUT ME */
-    .about_me {
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  /* ESTILOS DEL ABOUT ME */
+  .about_me {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    .photo img {
-        width: 250px;
-        height: 250px;
-    }
+  .photo img {
+    width: 250px;
+    height: 250px;
+  }
 
-    .description h1 {
-        font-size: 32px;
-    }
+  .description h1 {
+    font-size: 32px;
+  }
 
-    .description h3 {
-        font-size: 24px;
-    }
+  .description h3 {
+    font-size: 24px;
+  }
 
-    .description p {
-        font-size: 18px;
-    }
+  .description p {
+    font-size: 18px;
+  }
 
-    .description a img {
-        width: 50px;
-        height: 50px;
-        margin: 15px;
-    }
+  .description a img {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+  }
 }
