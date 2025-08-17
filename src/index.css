@@ -137,10 +137,11 @@ body {
   margin-top: 10px;
   margin-right: 15px;
   padding: 3px;
+  transition: all 700ms ease;
 }
 
 .about_me .photo:hover{
-  cursor: pointer;
+  cursor: pointer; 
   transform: rotate(10deg) scale(1.2);
 }
 
