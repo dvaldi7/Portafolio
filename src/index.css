@@ -458,7 +458,7 @@ footer .react_logo img:hover {
 
 .carousel-track {
   display: inline-flex;
-  animation: scroll 10s linear infinite;
+  animation: scroll 30s linear infinite;
   width: max-content;
 }
 
@@ -478,8 +478,6 @@ footer .react_logo img:hover {
     transform: translateX(0);
   }
   100% {
-    /* Mueve el contenedor el ancho de la primera sección
-       (una de las tres copias) para que el bucle sea perfecto. */
     transform: translateX(calc(-100% / 3));
   }
 }

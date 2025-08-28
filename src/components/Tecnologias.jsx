@@ -3,20 +3,33 @@ import htmlIcon from "../assets/icons/htmlIcon.png";
 import cssIcon from "../assets/icons/cssIcon.png";
 import jsIcon from "../assets/icons/jsIcon.png";
 import reactIcon from "../assets/icons/reactIcon.png";
-// Asegúrate de que este import es correcto y que iconosTecnologias
-// no es necesario si lo vas a definir localmente.
+import gitHubIcon from "../assets/icons/github.png";
+import nodeIcon from "../assets/icons/nodejs.png"
+import gitIcon from "../assets/icons/git.png"
+import mongoDBIcon from "../assets/icons/mongodb.svg"
+import mySqlIcon from "../assets/icons/mysql.png"
+import postmanIcon from "../assets/icons/postman.svg"
+import viteIcon from "../assets/icons/vite.svg"
+import tailwindIcon from "../assets/icons/tailwind.svg"
 
-// Definimos los iconos en un formato de array de objetos para facilitar el mapeo.
 const techLogos = [
     { name: 'HTML', src: htmlIcon },
     { name: 'CSS', src: cssIcon },
     { name: 'JavaScript', src: jsIcon },
     { name: 'React', src: reactIcon },
+    { name: 'Tailwind', src: tailwindIcon },
+    { name: 'Node', src: nodeIcon },
+    { name: 'GitHub', src: gitHubIcon },
+    { name: 'Git', src: gitIcon },
+    { name: 'MongoDB', src: mongoDBIcon },
+    { name: 'MySql', src: mySqlIcon },
+    { name: 'Postman', src: postmanIcon },
+    { name: 'Vite', src: viteIcon },
 ];
 
 export const Tecnologias = () => {
-    // Duplicamos el array de logos para el efecto de bucle infinito
-    const duplicatedLogos = [...techLogos, ...techLogos, ...techLogos, ...techLogos, ...techLogos, ...techLogos ];
+
+    const duplicatedLogos = [...techLogos, ...techLogos, ...techLogos, ...techLogos, ...techLogos, ...techLogos];
 
     return (
         <div className="carousel-container">
@@ -26,7 +39,7 @@ export const Tecnologias = () => {
             <div className="carousel-track">
 
                 {duplicatedLogos.map((tech, index) => (
-                    // Usamos la propiedad `src` y `name` del objeto `tech`
+                    
                     <div key={index} className="tech-item">
                         <img src={tech.src} alt={`${tech.name} Logo`} className="tech-logo" />
 
