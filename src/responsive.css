@@ -189,7 +189,7 @@
 
   /* ESTILOS DE CONTACTO */
   #contacto {
-    margin-top: -75px;
+    margin-top: -50px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -222,9 +222,14 @@
     margin-left: 15px;
     margin-top: 10px;
   }
-  /* ESTILOS DEL CAROUSEL */
+  /* ESTILOS DEL CAROUSEL Y TECNOLOGIAS */
   .carousel-container{
     margin-top: -50px;
+  }
+
+  .tech-names {
+     font-size: 0.6rem;
+     width: 20%;
   }
 }
 
@@ -386,7 +391,7 @@
 
   /* ESTILOS DE CONTACTO */
   #contacto {
-    margin-top: -75px;
+    margin-top: -50px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
