@@ -13,23 +13,23 @@ import viteIcon from "../assets/icons/vite.svg"
 import tailwindIcon from "../assets/icons/tailwind.svg"
 
 const techLogos = [
-    { name: 'HTML', src: htmlIcon },
-    { name: 'CSS', src: cssIcon },
-    { name: 'JavaScript', src: jsIcon },
-    { name: 'React', src: reactIcon },
-    { name: 'Tailwind', src: tailwindIcon },
-    { name: 'Node', src: nodeIcon },
-    { name: 'GitHub', src: gitHubIcon },
-    { name: 'Git', src: gitIcon },
-    { name: 'MongoDB', src: mongoDBIcon },
-    { name: 'MySql', src: mySqlIcon },
-    { name: 'Postman', src: postmanIcon },
-    { name: 'Vite', src: viteIcon },
+  { name: 'HTML', src: htmlIcon, className: 'html-item' },
+  { name: 'CSS', src: cssIcon, className: 'css-item' },
+  { name: 'JavaScript', src: jsIcon, className: 'js-item' },
+  { name: 'React', src: reactIcon, className: 'react-item' },
+  { name: 'Tailwind', src: tailwindIcon, className: 'tailwind-item' },
+  { name: 'Node', src: nodeIcon, className: 'node-item' },
+  { name: 'GitHub', src: gitHubIcon, className: 'github-item' },
+  { name: 'Git', src: gitIcon, className: 'git-item' },
+  { name: 'MongoDB', src: mongoDBIcon, className: 'mongodb-item' },
+  { name: 'MySql', src: mySqlIcon, className: 'mysql-item' },
+  { name: 'Postman', src: postmanIcon, className: 'postman-item' },
+  { name: 'Vite', src: viteIcon, className: 'vite-item' },
 ];
 
 export const Tecnologias = () => {
 
-    const duplicatedLogos = [...techLogos, ...techLogos, ...techLogos ];
+    const duplicatedLogos = [...techLogos, ...techLogos, ...techLogos];
 
     return (
         <div className="carousel-container">
@@ -39,13 +39,23 @@ export const Tecnologias = () => {
             <div className="carousel-track">
 
                 {duplicatedLogos.map((tech, index) => (
-                    
+
                     <div key={index} className="tech-item">
                         <img src={tech.src} alt={`${tech.name} Logo`} className="tech-logo" />
 
                     </div>
                 ))}
             </div>
+
+            <div className='carousel-names'>
+                {techLogos.map((tech) => (
+
+                    <div key={tech.name} className={`tech-names ${tech.className}`}>
+                        <p> {tech.name} </p>
+                    </div>
+                ))}
+            </div>
+
         </div>
     );
 };

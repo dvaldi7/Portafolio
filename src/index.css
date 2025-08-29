@@ -488,3 +488,129 @@ footer .react_logo img:hover {
     transform: translateX(calc(-100% / 3));
   }
 }
+
+/* Contenedor de nombres */
+.carousel-names {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px; 
+  margin-top: 50px;
+}
+
+
+.tech-names {
+  font-size: 0.9rem; 
+  font-weight: 500;
+  color: #d8d8d8; 
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  padding: 0px 30px; 
+  border-radius: 8px; 
+  background-color: transparent; 
+  cursor: pointer; 
+}
+
+/* Colores de sombra por tecnología*/
+/* HTML */
+.tech-names.html-item {
+  box-shadow: 0 0 10px 2px rgba(255, 99, 71, 0.6);
+}
+.tech-names.html-item:hover {
+  box-shadow: 0 0 18px 5px rgba(255, 99, 71, 0.8);
+}
+
+/* CSS */
+.tech-names.css-item {
+  box-shadow: 0 0 10px 2px rgba(65, 105, 225, 0.6);
+}
+.tech-names.css-item:hover {
+  box-shadow: 0 0 18px 5px rgba(65, 105, 225, 0.8);
+}
+
+/* JavaScript */
+.tech-names.js-item {
+  box-shadow: 0 0 10px 2px rgba(255, 223, 0, 0.6);
+}
+.tech-names.js-item:hover {
+  box-shadow: 0 0 18px 5px rgba(255, 223, 0, 0.8);
+}
+
+/* React */
+.tech-names.react-item {
+  box-shadow: 0 0 10px 2px rgba(97, 218, 251, 0.6);
+}
+.tech-names.react-item:hover {
+  box-shadow: 0 0 18px 5px rgba(97, 218, 251, 0.8);
+}
+
+/* Tailwind */
+.tech-names.tailwind-item {
+  box-shadow: 0 0 10px 2px rgba(58, 137, 126, 0.6);
+}
+.tech-names.tailwind-item:hover {
+  box-shadow: 0 0 18px 5px rgba(58, 137, 126, 0.8);
+}
+
+/* Node */
+.tech-names.node-item {
+  box-shadow: 0 0 10px 2px rgba(139, 195, 74, 0.6);
+}
+.tech-names.node-item:hover {
+  box-shadow: 0 0 18px 5px rgba(139, 195, 74, 0.8);
+}
+
+/* GitHub */
+.tech-names.github-item {
+  box-shadow: 0 0 10px 2px rgba(105, 105, 105, 0.6);
+}
+.tech-names.github-item:hover {
+  box-shadow: 0 0 18px 5px rgba(105, 105, 105, 0.8);
+}
+
+/* Git */
+.tech-names.git-item {
+  box-shadow: 0 0 10px 2px rgba(240, 84, 57, 0.6);
+}
+.tech-names.git-item:hover {
+  box-shadow: 0 0 18px 5px rgba(240, 84, 57, 0.8);
+}
+
+/* MongoDB */
+.tech-names.mongodb-item {
+  box-shadow: 0 0 10px 2px rgba(78, 158, 62, 0.6);
+}
+.tech-names.mongodb-item:hover {
+  box-shadow: 0 0 18px 5px rgba(78, 158, 62, 0.8);
+}
+
+/* MySQL */
+.tech-names.mysql-item {
+  box-shadow: 0 0 10px 2px rgba(0, 117, 187, 0.6);
+}
+.tech-names.mysql-item:hover {
+  box-shadow: 0 0 18px 5px rgba(0, 117, 187, 0.8);
+}
+
+/* Postman */
+.tech-names.postman-item {
+  box-shadow: 0 0 10px 2px rgba(255, 107, 73, 0.6);
+}
+.tech-names.postman-item:hover {
+  box-shadow: 0 0 18px 5px rgba(255, 107, 73, 0.8);
+}
+
+/* Vite */
+.tech-names.vite-item {
+  box-shadow: 0 0 10px 2px rgba(214, 26, 198, 0.6);
+}
+.tech-names.vite-item:hover {
+  box-shadow: 0 0 18px 5px rgba(197, 7, 245, 0.8);
+}
+
+/* Efecto hover general */
+.tech-names:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.3);
+}
