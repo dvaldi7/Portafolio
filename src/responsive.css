@@ -202,6 +202,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-top: 100px;
   }
 
   /* ESTILOS DEL FOOTER */
@@ -220,6 +221,10 @@
     height: auto;
     margin-left: 15px;
     margin-top: 10px;
+  }
+  /* ESTILOS DEL CAROUSEL */
+  .carousel-container{
+    margin-top: -50px;
   }
 }
 
@@ -394,6 +399,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-top: 100px;
   }
 }
 

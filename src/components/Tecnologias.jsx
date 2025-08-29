@@ -29,7 +29,7 @@ const techLogos = [
 
 export const Tecnologias = () => {
 
-    const duplicatedLogos = [...techLogos, ...techLogos, ...techLogos, ...techLogos, ...techLogos, ...techLogos];
+    const duplicatedLogos = [...techLogos, ...techLogos, ...techLogos ];
 
     return (
         <div className="carousel-container">

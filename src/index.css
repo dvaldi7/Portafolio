@@ -340,7 +340,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-
+  margin-top: 80px;
   color: var(--color-acento-neon-3);
   font-size: 40px;
 }
@@ -444,7 +444,8 @@ footer .react_logo img:hover {
   font-size: 40px;
   display: grid;
   place-items: center;
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 100px;
   color: var(--color-acento-neon-3);
 }
 
@@ -454,18 +455,24 @@ footer .react_logo img:hover {
   white-space: nowrap;
   padding: 20px 0;
   box-sizing: border-box;
+
 }
 
 .carousel-track {
   display: inline-flex;
-  animation: scroll 30s linear infinite;
+  animation: scroll 20s linear infinite;
   width: max-content;
+  border-top: 2px solid wheat;
+  border-bottom: 2px solid wheat;
+  margin-bottom: 30px;
 }
 
 .tech-item {
   display: inline-block;
   margin: 0 25px;
   flex-shrink: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .tech-logo {
