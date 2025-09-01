@@ -32,7 +32,7 @@ export const Tecnologias = () => {
     const duplicatedLogos = [...techLogos, ...techLogos, ...techLogos];
 
     return (
-        <div className="carousel-container">
+        <div className="carousel-container" id='tecnologias'>
 
             <h3 className='carousel_name'>Tecnologías</h3>
 
