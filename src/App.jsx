@@ -23,7 +23,7 @@ function App() {
   }, [location]);
 
   return (
-    <div className='layout'>
+    <div className='layout' id='inicio'>
 
       {/* HEADER Y NAV */}
       <HeaderNav />

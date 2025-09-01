@@ -10,7 +10,7 @@ export const HeaderNav = () => {
 
     return (
         <>
-            <header className='header' id='inicio'>
+            <header className='header'>
                 <div className='logo'>
                     <div className='marca'>
                         <span className='span__d'>D</span>
