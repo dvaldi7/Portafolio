@@ -20,7 +20,7 @@ export const HeaderNav = () => {
                 </div>
 
                 {/* Botón de hamburguesa */}
-                <div className='hamburger-menu' onClick={toggleMenu}>
+                 <div className={`hamburger-menu ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
                     <div className='bar'></div>
                     <div className='bar'></div>
                     <div className='bar'></div>
