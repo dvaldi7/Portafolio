@@ -1,30 +1,45 @@
 /* GAMA DE COLORES PARA EL PORTAFOLIO */
 :root {
   /* Fondo principal */
-  --color-fondo: #121212; /* Negro suave, no completamente oscuro */
-  --color-fondo-fin: #2c3e50; /* Azul oscuro para degradado */
+  --color-fondo: #121212;
+  /* Negro suave, no completamente oscuro */
+  --color-fondo-fin: #2c3e50;
+  /* Azul oscuro para degradado */
   /* Colores para texto */
-  --color-letras-principales: #FFFFFF; /* Blanco puro para máxima legibilidad */
-  --color-letras-accento: #6F2DA8; /* Violeta profundo para títulos o énfasis */
-  --color-letras-secundarias: #808080; /* Gris medio para texto secundario */
+  --color-letras-principales: #FFFFFF;
+  /* Blanco puro para máxima legibilidad */
+  --color-letras-accento: #6F2DA8;
+  /* Violeta profundo para títulos o énfasis */
+  --color-letras-secundarias: #808080;
+  /* Gris medio para texto secundario */
 
   /* Colores neón para acentos */
-  --color-acento-neon-1: #FF6F61; /* Naranja neón */
-  --color-acento-neon-2: #39FF14; /* Verde neón */
-  --color-acento-neon-3: #FFC300; /* Amarillo neón */
-  --color-acento-neon-4: #00E8FF; /* Azul neón */
+  --color-acento-neon-1: #FF6F61;
+  /* Naranja neón */
+  --color-acento-neon-2: #39FF14;
+  /* Verde neón */
+  --color-acento-neon-3: #FFC300;
+  /* Amarillo neón */
+  --color-acento-neon-4: #00E8FF;
+  /* Azul neón */
 
   /* Botones y elementos interactivos */
-  --color-botones-principales: #FF7F50; /* Salmón fuerte para botones */
-  --color-botones-hover: #FF4500; /* Naranja más intenso al pasar el mouse */
-  --color-botones-texto: #FFFFFF; /* Texto blanco en botones */
+  --color-botones-principales: #FF7F50;
+  /* Salmón fuerte para botones */
+  --color-botones-hover: #FF4500;
+  /* Naranja más intenso al pasar el mouse */
+  --color-botones-texto: #FFFFFF;
+  /* Texto blanco en botones */
 
   /* Bordes y detalles */
-  --color-borde: #4B0082; /* Añade un borde morado oscuro para detalles */
-  --color-borde-neon: #FF00FF; /* Rosa neón para bordes destacados */
+  --color-borde: #4B0082;
+  /* Añade un borde morado oscuro para detalles */
+  --color-borde-neon: #FF00FF;
+  /* Rosa neón para bordes destacados */
 
   /* Fondo alternativo para secciones */
-  --color-fondo-alternativo: #1E1E1E; /* Negro más claro para alternar fondos */
+  --color-fondo-alternativo: #1E1E1E;
+  /* Negro más claro para alternar fondos */
 
 }
 
@@ -32,11 +47,13 @@
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh; /* Asegura que el body ocupe toda la altura de la pantalla */
+  min-height: 100vh;
+  /* Asegura que el body ocupe toda la altura de la pantalla */
   background: linear-gradient(var(--color-fondo), var(--color-fondo-fin));
   font-family: monospace;
 }
-.layout{
+
+.layout {
   width: 85%;
   margin: 0 auto;
   color: var(--color-letras-principales);
@@ -44,41 +61,48 @@ body {
 
 /* ESTILOS DEL HEADER */
 
-.header{
-  height: 130px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--color-letras-principales);
-  margin-bottom: 35px;
-  letter-spacing: 1px;
+.header {
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-letras-principales);
+    margin-bottom: 35px;
+    letter-spacing: 1px;
+    gap: 20px; 
+    position: relative; 
+    z-index: 10; 
 }
 
-.header .logo{
+.hamburger-menu {
+    display: none;
+}
+
+.header .logo {
   display: flex;
   flex: 1 1 auto;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.header .logo h3{
+.header .logo h3 {
   display: flex;
   flex-basis: 40px;
   margin-left: 40px;
   font-weight: 200;
 }
 
-.header a{
+.header a {
   text-decoration: none;
   transition: all 300ms ease;
   color: var(--color-acento-neon-3);
 }
 
-.header a:hover{
+.header a:hover {
   color: var(--color-acento-neon-2);
 }
 
-.header ul{
+.header ul {
   height: 130px;
   display: flex;
   justify-content: center;
@@ -86,37 +110,38 @@ body {
   list-style: none;
 }
 
-.header li{
+.header li {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16px;
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 9px;
+  padding: 5px;
   transition: all 300ms ease;
 }
 
-.header li:hover{
+.header li:hover {
   transform: scale(1.1);
 }
 
-.header .span__v{
+.header .span__v {
   color: red;
-  margin-left: 1px ;
+  margin-left: 1px;
 }
 
-.header .marca{
+.header .marca {
   font-size: 45px;
   font-weight: 800;
 }
 
 /* CONTENT */
-.content{
+.content {
   min-height: 400px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ESTILOS DEL ABOUT ME */
-.about_me{
+.about_me {
   display: flex;
   padding: 5px;
   justify-content: center;
@@ -124,12 +149,12 @@ body {
   font-family: monospace;
 }
 
-.about_me img{
+.about_me img {
   border-radius: 9999px;
   padding: 10px;
 }
 
-.about_me .photo{
+.about_me .photo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,19 +165,19 @@ body {
   transition: all 700ms ease;
 }
 
-.about_me .photo:hover{
-  cursor: pointer; 
+.about_me .photo:hover {
+  cursor: pointer;
   transform: rotate(10deg) scale(1.2);
 }
 
-.about_me .description{
+.about_me .description {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
 }
 
-.about_me .description h1{
+.about_me .description h1 {
   width: 100%;
   height: 40px;
   font-weight: bolder;
@@ -165,33 +190,34 @@ body {
   visibility: visible;
 }
 
-@keyframes typing{
-  from{
+@keyframes typing {
+  from {
     width: .1ch;
   }
-  to{
+
+  to {
     width: 100%;
-  } 
+  }
 }
 
-.about_me .description h3{
+.about_me .description h3 {
   width: 100%;
 }
 
-.about_me .description strong{
+.about_me .description strong {
   color: var(--color-acento-neon-2);
 }
 
 .about_me .icons {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
-  gap: 15px; 
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
   margin-top: 20px;
 }
 
 .about_me .icons a img {
-  width: 40px; 
+  width: 40px;
   height: 40px;
   transition: all 300ms;
 }
@@ -200,15 +226,16 @@ body {
   transform: scale(1.2);
   box-shadow: 1px 3px white;
 }
+
 /* PROYECTOS */
 
 
-.portafolio{
+.portafolio {
   font-family: monospace;
   font-size: large;
 }
 
-.portafolio-title{
+.portafolio-title {
   font-size: 40px;
   display: grid;
   place-items: center;
@@ -216,10 +243,10 @@ body {
   color: var(--color-acento-neon-3);
 }
 
-.works{
+.works {
   display: flex;
   flex-wrap: wrap;
-  padding:20px;
+  padding: 20px;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
@@ -237,24 +264,24 @@ body {
   height: 300px;
 }
 
-.project-info a{
+.project-info a {
   display: inline-block;
   color: var(--color-acento-neon-3);
   text-decoration: none;
   transition: all 300ms;
 }
 
-.project-info a:hover{
+.project-info a:hover {
   color: var(--color-acento-neon-2);
   transform: scale(1.1);
 }
 
-.project-desc{
+.project-desc {
   text-align: center;
   margin-top: 20px;
 }
 
-.project-item{
+.project-item {
   display: flex;
   width: 100%;
   flex-grow: 1;
@@ -263,68 +290,77 @@ body {
   align-items: center;
   box-sizing: border-box;
   margin: 20px;
-  overflow: hidden; 
+
   position: relative;
+  transition: all 500ms ease;
 
 }
 
-.project-item img{
+.project-item img {
   width: 100%;
   height: auto;
-  transition: all 500ms;
   cursor: pointer;
 }
 
-.project-item .mask{
+.project-item .mask {
   margin-right: 20px;
   max-width: 348px;
   object-fit: cover;
-  box-shadow: 0px 5px 10px wheat;
+  box-shadow: 0 2px 10px var(--color-acento-neon-3),
+    0 0 0 1px rgba(57, 255, 20, 0.4);
   box-sizing: border-box;
-  transition: transform 500ms;
+  transition: transform 500ms ease, box-shadow 500ms ease;
+
 }
 
-.project-item .mask:hover{
-  transform: scale(1.2);
+.project-item .mask:hover {
+  transform: scale(1.1);
+  box-shadow:
+    0 0 8px var(--color-acento-neon-2),
+    0 0 12px var(--color-acento-neon-2),
+    0 0 16px rgba(57, 255, 20, 0.6),
+    0 5px 20px -5px var(--color-acento-neon-2);
 }
 
-.project-tech img{
+.project-tech img {
   margin-top: 20px;
   width: 40px;
   height: auto;
   margin-right: 20px;
   box-shadow: 0px 2px 5px wheat;
+  transition: all 500ms ease;
 }
-.project-tech img:hover{
-  transform: scale(1.6);
+
+.project-tech img:hover {
+  transform: scale(1.3);
   border-radius: 50%;
 }
 
 
 /* CONTACTO */
-#contacto{
+#contacto {
   font-family: monospace;
   font-size: large;
 }
 
-.contact_name{
+.contact_name {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  
+  margin-top: 80px;
   color: var(--color-acento-neon-3);
   font-size: 40px;
 }
 
-.contact{
+.contact {
   display: grid;
   place-items: center;
 }
 
 input[type="text"],
 input[type="email"],
-textarea{
+textarea {
   display: block;
   padding: 15px;
   width: 250px;
@@ -334,10 +370,10 @@ textarea{
   border-color: white;
   background-color: transparent;
   font-size: 14px;
- color: white;
+  color: white;
 }
 
-input[type="submit"]{
+input[type="submit"] {
   margin-top: 50px;
   margin-bottom: 30px;
   width: 100px;
@@ -349,14 +385,15 @@ input[type="submit"]{
   padding: 10px;
   font-weight: bold;
   cursor: pointer;
+  transition: all 300ms ease;
 }
-input[type="submit"]:hover{
-  transform: scale(1.2);
-  transition: all 300ms;
+
+input[type="submit"]:hover {
+  transform: scale(1.2); 
   box-shadow: 1px 2px white;
 }
 
-.correo-alternativo{
+.correo-alternativo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -364,7 +401,7 @@ input[type="submit"]:hover{
 }
 
 
-.correo-alternativo-btn{
+.correo-alternativo-btn {
   width: 120px;
   background-color: var(--color-acento-neon-3);
   color: #1E1E1E;
@@ -375,17 +412,17 @@ input[type="submit"]:hover{
   font-weight: bold;
   cursor: pointer;
   margin-left: 10px;
+  transition: all 300ms ease;
 }
 
-.correo-alternativo-btn:hover{
+.correo-alternativo-btn:hover {
   transform: scale(1.1);
-  transition: all 300ms;
   box-shadow: 1px 2px white;
 }
 
-/* ESTILOS DEL FOOTER */ 
+/* ESTILOS DEL FOOTER */
 
-footer{
+footer {
   min-height: 150px;
   line-height: 120px;
   border-top: 2px solid white;
@@ -395,16 +432,193 @@ footer{
 
 }
 
-footer .react_logo img{
-  
-  width: 35px;      
+footer .react_logo img {
+
+  width: 35px;
   height: auto;
   margin-left: 15px;
   margin-top: 10px;
-  
+
 }
 
-footer .react_logo img:hover{
+footer .react_logo img:hover {
   transform: scale(1.2);
   transition: all 300ms;
+}
+
+/* ESTILOS DEL CAROUSEL */
+
+.carousel_name {
+  font-size: 40px;
+  display: grid;
+  place-items: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  color: var(--color-acento-neon-3);
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 20px 0;
+  box-sizing: border-box;
+
+}
+
+.carousel-track {
+  display: inline-flex;
+  animation: scroll 20s linear infinite;
+  width: max-content;
+  border-top: 2px solid wheat;
+  border-bottom: 2px solid wheat;
+  margin-bottom: 30px;
+}
+
+.tech-item {
+  display: inline-block;
+  margin: 0 25px;
+  flex-shrink: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.tech-logo {
+  height: 50px;
+  width: auto;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% / 3));
+  }
+}
+
+/* Contenedor de nombres */
+.carousel-names {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px; 
+  margin-top: 50px;
+}
+
+
+.tech-names {
+  font-size: 0.9rem; 
+  font-weight: 500;
+  color: #d8d8d8; 
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  padding: 0px 30px; 
+  border-radius: 8px; 
+  background-color: transparent; 
+  cursor: pointer; 
+}
+
+/* Colores de sombra por tecnología*/
+/* HTML */
+.tech-names.html-item {
+  box-shadow: 0 0 10px 2px rgba(255, 99, 71, 0.6);
+}
+.tech-names.html-item:hover {
+  box-shadow: 0 0 18px 5px rgba(255, 99, 71, 0.8);
+}
+
+/* CSS */
+.tech-names.css-item {
+  box-shadow: 0 0 10px 2px rgba(65, 105, 225, 0.6);
+}
+.tech-names.css-item:hover {
+  box-shadow: 0 0 18px 5px rgba(65, 105, 225, 0.8);
+}
+
+/* JavaScript */
+.tech-names.js-item {
+  box-shadow: 0 0 10px 2px rgba(255, 223, 0, 0.6);
+}
+.tech-names.js-item:hover {
+  box-shadow: 0 0 18px 5px rgba(255, 223, 0, 0.8);
+}
+
+/* React */
+.tech-names.react-item {
+  box-shadow: 0 0 10px 2px rgba(97, 218, 251, 0.6);
+}
+.tech-names.react-item:hover {
+  box-shadow: 0 0 18px 5px rgba(97, 218, 251, 0.8);
+}
+
+/* Tailwind */
+.tech-names.tailwind-item {
+  box-shadow: 0 0 10px 2px rgba(58, 137, 126, 0.6);
+}
+.tech-names.tailwind-item:hover {
+  box-shadow: 0 0 18px 5px rgba(58, 137, 126, 0.8);
+}
+
+/* Node */
+.tech-names.node-item {
+  box-shadow: 0 0 10px 2px rgba(139, 195, 74, 0.6);
+}
+.tech-names.node-item:hover {
+  box-shadow: 0 0 18px 5px rgba(139, 195, 74, 0.8);
+}
+
+/* GitHub */
+.tech-names.github-item {
+  box-shadow: 0 0 10px 2px rgba(105, 105, 105, 0.6);
+}
+.tech-names.github-item:hover {
+  box-shadow: 0 0 18px 5px rgba(105, 105, 105, 0.8);
+}
+
+/* Git */
+.tech-names.git-item {
+  box-shadow: 0 0 10px 2px rgba(240, 84, 57, 0.6);
+}
+.tech-names.git-item:hover {
+  box-shadow: 0 0 18px 5px rgba(240, 84, 57, 0.8);
+}
+
+/* MongoDB */
+.tech-names.mongodb-item {
+  box-shadow: 0 0 10px 2px rgba(78, 158, 62, 0.6);
+}
+.tech-names.mongodb-item:hover {
+  box-shadow: 0 0 18px 5px rgba(78, 158, 62, 0.8);
+}
+
+/* MySQL */
+.tech-names.mysql-item {
+  box-shadow: 0 0 10px 2px rgba(0, 117, 187, 0.6);
+}
+.tech-names.mysql-item:hover {
+  box-shadow: 0 0 18px 5px rgba(0, 117, 187, 0.8);
+}
+
+/* Postman */
+.tech-names.postman-item {
+  box-shadow: 0 0 10px 2px rgba(255, 107, 73, 0.6);
+}
+.tech-names.postman-item:hover {
+  box-shadow: 0 0 18px 5px rgba(255, 107, 73, 0.8);
+}
+
+/* Vite */
+.tech-names.vite-item {
+  box-shadow: 0 0 10px 2px rgba(214, 26, 198, 0.6);
+}
+.tech-names.vite-item:hover {
+  box-shadow: 0 0 18px 5px rgba(197, 7, 245, 0.8);
+}
+
+/* Efecto hover general */
+.tech-names:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.3);
 }

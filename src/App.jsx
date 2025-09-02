@@ -7,6 +7,7 @@ import { HeaderNav } from './components/layout/HeaderNav'
 import { Portafolio } from './components/Portafolio'
 import { useLocation } from 'react-router-dom'
 import React, { useEffect } from 'react';
+import { Tecnologias } from './components/Tecnologias'
 
 function App() {
   
@@ -22,7 +23,7 @@ function App() {
   }, [location]);
 
   return (
-    <div className='layout'>
+    <div className='layout' id='inicio'>
 
       {/* HEADER Y NAV */}
       <HeaderNav />
@@ -32,6 +33,8 @@ function App() {
         <About />
         
         <Portafolio />
+
+        <Tecnologias />
      
         <Contacto />
       </section>
