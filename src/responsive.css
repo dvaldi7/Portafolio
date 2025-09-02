@@ -1,0 +1,546 @@
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--color-fondo);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .header .logo {
+    flex: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 100;
+    margin-right: 50px;
+    transition: all 0.3s ease;
+    position: relative;
+    /* necesario para posicionar el círculo */
+  }
+
+  .hamburger-menu .bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-letras-principales);
+    transition: all 0.3s ease;
+  }
+
+  /* Transformación a 'X' cuando el menú está abierto */
+  .hamburger-menu.open {
+    border-radius: 50%;
+    background-color: yellow;
+    width: 29px;
+    height: 30px;
+  }
+
+  /* Círculo extra para el símbolo de X-Men */
+  .hamburger-menu::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 28px;
+    height: 24px;
+    border: 3px solid rgb(250, 8, 8);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.3s ease;
+    z-index: -1;
+  }
+
+  /* Cuando el menú está abierto, aparece el círculo */
+  .hamburger-menu.open::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .hamburger-menu.open .bar:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+    background-color: rgb(250, 8, 8);
+  }
+
+  .hamburger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.open .bar:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+    background-color: rgb(250, 8, 8);
+  }
+
+
+  /* Ocultamos la navegación por defecto en móviles */
+  .header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .header nav.menu-open {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .header ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    backdrop-filter: blur(5px);
+    transition: backdrop-filter 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+
+  .header li {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .header li:hover {
+    background-color: #1d1d1d;
+  }
+
+  .header li:last-child {
+    border-bottom: none;
+  }
+
+  .header a {
+    font-size: 1 rem;
+    font-weight: bolder;
+    display: block;
+    padding: 0;
+  }
+
+  .header .marca {
+    font-size: 35px;
+  }
+
+  .header .logo h3 {
+    margin-left: 5px;
+    font-size: 10px;
+    flex-basis: 85px;
+  }
+
+  /* ESTILOS DEL ABOUT ME */
+  .about_me {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 110px;
+  }
+
+  .about_me .icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+
+  .about_me .icons a img {
+    width: 30px;
+    height: auto;
+  }
+
+  #typing-text {
+    font-size: 25px;
+  }
+
+  .photo img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .description {
+    justify-content: center;
+  }
+
+  .description h1 {
+    font-size: 24px;
+  }
+
+  .description h3 {
+    font-size: 18px;
+  }
+
+  .description p {
+    font-size: 14px;
+  }
+
+  .description a img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
+
+
+  /* ESTILOS DEL PORTAFOLIO */
+
+  .portafolio {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .portafolio-title {
+    font-size: 1.5rem;
+  }
+
+  .works {
+    flex-direction: column;
+    align-items: center;
+    margin-left: -15px;
+  }
+
+  .project-item {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mask {
+    width: 80%;
+
+  }
+
+  .project-info {
+    width: 80%;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-left: -20px;
+  }
+
+  .project-info a:hover {
+    transform: scale(1.1);
+  }
+
+  .project-url {
+    text-align: center;
+
+  }
+
+  .project-url a {
+    font-size: 16px;
+  }
+
+  .project-desc {
+    width: 100%;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  .project-tech {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .project-tech img {
+    width: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .tech-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  /* ESTILOS DE CONTACTO */
+  #contacto {
+    margin-top: -50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact_name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    font-size: 1.5rem;
+  }
+
+  /* ESTILOS DEL FOOTER */
+
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 106%;
+    font-size: 10px;
+  }
+
+  .foter .react_logo img {
+    width: 35px;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+
+  /* ESTILOS DEL CAROUSEL Y TECNOLOGIAS */
+
+  .carousel_name {
+    font-size: 1.5rem;
+  }
+
+  .tech-names {
+    font-size: 0.6rem;
+    width: 20%;
+  }
+
+
+  #inicio,
+  #sobreMi,
+  #portafolio,
+  #tecnologias {
+    scroll-margin-top: 80px;
+  }
+}
+
+
+/* Estilos para pantallas medianas (tablets) */
+@media (min-width: 769px) and (max-width: 1035px) {
+
+  /* ESTILOS DEL HEADER Y NAV */
+
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+
+  }
+
+  div.logo {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .header .marca {
+    font-size: 50px;
+  }
+
+  .header .logo h3 {
+    justify-content: flex-end;
+
+  }
+
+  .header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .header ul {
+    display: flex;
+    flex-shrink: initial;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    flex-wrap: nowrap;
+  }
+
+  .header a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 35px;
+    font-size: 18px;
+    padding: 2px;
+  }
+
+  .header li:hover {
+    transform: scale(1.1);
+  }
+
+  /* ESTILOS DEL ABOUT ME */
+  .about_me {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .photo img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .description h1 {
+    font-size: 28px;
+  }
+
+  .description h3 {
+    font-size: 20px;
+  }
+
+  .description p {
+    font-size: 16px;
+  }
+
+  .description a img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
+
+  /* ESTILOS DE PROYECTOS */
+
+  .works {
+    flex-direction: column;
+    align-items: center;
+    margin-left: -15px;
+  }
+
+  .project-item {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mask {
+    width: 80%;
+
+  }
+
+  .project-info {
+    width: 80%;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-left: -20px;
+  }
+
+  .project-info a:hover {
+    transform: scale(1.1);
+  }
+
+  .project-url {
+    text-align: center;
+
+  }
+
+  .project-url a {
+    font-size: 18px;
+  }
+
+  .project-desc {
+    width: 100%;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  .project-tech {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .project-tech img {
+    width: 45px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .tech-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  /* ESTILOS DE CONTACTO */
+  #contacto {
+    margin-top: -50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact_name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+  }
+}
+
+/* Estilos para pantallas grandes (escritorios) */
+@media (min-width: 1035px) {
+
+  /* ESTILOS DEL ABOUT ME */
+  .about_me {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .photo img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .description h1 {
+    font-size: 32px;
+  }
+
+  .description h3 {
+    font-size: 24px;
+  }
+
+  .description p {
+    font-size: 18px;
+  }
+
+  .description a img {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+  }
+}
