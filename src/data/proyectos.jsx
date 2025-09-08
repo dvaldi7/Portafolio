@@ -17,6 +17,15 @@ export const proyectos = [
         "Victor Robles",
     },
     {
+        "id": "spanishMMA",
+        "nombre": "Spanish MMA",
+        "url": "https://dvaldi7.github.io/Spanish-MMA/",
+        "tecnologias": "React, Tailwind", 
+        "descripcion": "Front-end creado a partir de un curso de Victor Robles pero "+
+        "para aprender Tailwind. Aunque el proyecto original era para un curso," +
+        "lo he transformado totalmente, cambiando los colores, la temática y el enfoque.",
+    },
+    {
         "id": "pokedex",
         "nombre": "Pokédex",
         "url": "https://dvaldi7.github.io/Pokedex/",
