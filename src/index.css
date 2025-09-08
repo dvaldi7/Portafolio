@@ -305,7 +305,8 @@ body {
 .project-item .mask {
   position: relative;
   margin-right: 20px;
-  max-width: 348px;
+  max-width: 300px;
+  max-height: 275px;
   object-fit: cover;
   border-radius: 12px;
   overflow: hidden;
