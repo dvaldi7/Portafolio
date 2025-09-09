@@ -9,8 +9,6 @@ export const proyectos = [
         "Gracie Barra, en Alicante.",
     },
     {
-<<<<<<< HEAD
-=======
         "id": "ReactSocial",
         "nombre": "React Social",
         "url": "dvaldi7-reactsocial.vercel.app",
@@ -28,7 +26,6 @@ export const proyectos = [
         "lo he transformado totalmente, cambiando los colores, la temática y el enfoque.",
     },
     {
->>>>>>> gh-pages
         "id": "pokedex",
         "nombre": "Pokédex",
         "url": "https://dvaldi7.github.io/Pokedex/",
@@ -44,9 +41,6 @@ export const proyectos = [
         "descripcion": "Lading Page para una web de excursiones por la naturaleza"+
         ". Próximamente habrá más información...",
     },
-<<<<<<< HEAD
-=======
      
->>>>>>> gh-pages
 
 ];
