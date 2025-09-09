@@ -11,7 +11,7 @@ export const proyectos = [
     {
         "id": "ReactSocial",
         "nombre": "React Social",
-        "url": "dvaldi7-reactsocial.vercel.app",
+        "url": "https://dvaldi7-reactsocial.vercel.app",
         "tecnologias": "React, NodeJS", 
         "descripcion": "Red social creada con React + Node siguiendo el curso de "+
         "Victor Robles",
