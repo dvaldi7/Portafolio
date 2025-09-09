@@ -268,7 +268,7 @@ body {
   display: inline-block;
   color: var(--color-acento-neon-3);
   text-decoration: none;
-  transition: all 500ms;
+  transition: all 500ms ease;
 }
 
 .project-info a:hover {

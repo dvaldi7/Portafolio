@@ -21,8 +21,8 @@ export const proyectos = [
         "nombre": "Spanish MMA",
         "url": "https://dvaldi7.github.io/Spanish-MMA/",
         "tecnologias": "React, Tailwind", 
-        "descripcion": "Front-end creado a partir de un curso de Victor Robles pero "+
-        "para aprender Tailwind. Aunque el proyecto original era para un curso," +
+        "descripcion": "Front-end creado para aprender Tailwind "+
+        "a partir de un curso de Victor Robles. Aunque el proyecto original era para dicho curso, " +
         "lo he transformado totalmente, cambiando los colores, la temática y el enfoque.",
     },
     {
