@@ -16,13 +16,13 @@ export const Portafolio = () => {
             return (
               <article key={proyectos.id} className='project-item'>
                 <div className='mask'>
-                <a href={proyectos.url}
-                      target="_blank"
-                      rel="noopener noreferrer">
-                    
-                  <img src={`/Portafolio/images/${proyectos.id}.png`}
-                    alt={`imagen del proyecto ${proyectos.nombre}`} />
-                </a>
+                  <a href={proyectos.url}
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <img src={`/Portafolio/images/${proyectos.id}.png`}
+                      alt={`imagen del proyecto ${proyectos.nombre}`} />
+                  </a>
                 </div>
 
                 <div className='project-info'>
@@ -35,14 +35,14 @@ export const Portafolio = () => {
                   </h2>
 
                   <h3 className='project-desc'>{proyectos.descripcion}</h3>
-                  
+
                   <h3 className="project-tech">
                     {proyectos.tecnologias.split(", ").map((tecnologia, index) => (
-                        <img
-                          src={iconosTecnologias[tecnologia]} key={index}
-                          className="tech-icon" alt={tecnologia}
-                          title={tecnologia}
-                        />
+                      <img
+                        src={iconosTecnologias[tecnologia]} key={index}
+                        className="tech-icon" alt={tecnologia}
+                        title={tecnologia}
+                      />
                     ))}
                   </h3>
 

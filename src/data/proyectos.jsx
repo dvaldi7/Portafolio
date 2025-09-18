@@ -8,6 +8,16 @@ export const proyectos = [
         "descripcion": "Landing page realizada para el gimnasio de Brazilian Jiujitsu "+
         "Gracie Barra, en Alicante.",
     },
+     {
+        "id": "AtrioRowena",
+        "nombre": "The Atrio of Rowena",
+        "url": "https://magical-bookstore-front.vercel.app/",
+        "tecnologias": "React, Tailwind", 
+        "descripcion": "Proyecto colaborativo para la IX edición de la Devathon "+
+        "del canal de Programación en español del divulgador Pedro Plasencia. Edición "+
+        "con temática Harry Potter en la que estuve trabajando en la parte front-end con un equipo de desarrollo "+
+        "formado por 6 participantes dentro del equipo Ravenclaw.",
+    },
     {
         "id": "ReactSocial",
         "nombre": "React Social",
@@ -22,8 +32,8 @@ export const proyectos = [
         "url": "https://dvaldi7.github.io/Spanish-MMA/",
         "tecnologias": "React, Tailwind", 
         "descripcion": "Front-end creado para aprender Tailwind "+
-        "a partir de un curso de Victor Robles. Aunque el proyecto original era para dicho curso, " +
-        "lo he transformado totalmente, cambiando los colores, la temática y el enfoque.",
+        ". Aunque el proyecto original era para dicha biblioteca y formaba parte de un curso, " +
+        "se ha transformado totalmente, cambiando los colores, la temática y el enfoque.",
     },
     {
         "id": "pokedex",
