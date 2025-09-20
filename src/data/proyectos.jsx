@@ -8,7 +8,7 @@ export const proyectos = [
         "descripcion": "Landing page realizada para el gimnasio de Brazilian Jiujitsu "+
         "Gracie Barra, en Alicante.",
     },
-     {
+    /* {
         "id": "AtrioRowena",
         "nombre": "The Atrio of Rowena",
         "url": "https://magical-bookstore-front.vercel.app/",
@@ -17,7 +17,7 @@ export const proyectos = [
         "del canal de Programación en español del divulgador Pedro Plasencia. Edición "+
         "con temática Harry Potter en la que estuve trabajando en la parte front-end con un equipo de desarrollo "+
         "formado por 6 participantes dentro del equipo Ravenclaw.",
-    },
+    },*/
     {
         "id": "ReactSocial",
         "nombre": "React Social",
